@@ -1,3 +1,5 @@
+/* ======================================
+   CAMPUS BITES - SHARED BASE STYLES
 /* ========================================
    CAMPUS BITES - SHARED STYLES
 
@@ -19,6 +21,7 @@ body {
   margin: 0 auto;
 }
 
+/* HEADER AND NAVIGATION */
 /* HEADER */
 
 .site-header {
@@ -64,6 +67,7 @@ body {
   color: #e8b85b;
 }
 
+/* SHARED FOOTER */
 /* MENU HERO */
 
 .menu-hero {
@@ -215,6 +219,7 @@ body {
   font-size: 14px;
 }
 
+/* RESPONSIVE HEADER */
 /* RESPONSIVE DESIGN */
 
 @media (max-width: 768px) {
@@ -225,6 +230,225 @@ body {
   .main-nav {
     justify-content: center;
     gap: 15px;
+  }
+}
+
+/* ======================================
+   FEEDBACK & CONTACT PAGE
+
+.feedback-hero {
+  background: #eaf0e9;
+  text-align: center;
+  padding: 75px 20px;
+}
+
+.feedback-hero h1 {
+  color: #173b32;
+  font-size: clamp(36px, 5vw, 52px);
+  margin-bottom: 15px;
+}
+
+.feedback-hero h1 span {
+  color: #c58c32;
+}
+
+.feedback-hero p {
+  max-width: 650px;
+  margin: auto;
+  color: #657169;
+}
+
+.feedback-container {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.feedback-heading,
+.feedback-form-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.feedback-heading h2,
+.feedback-form-heading h2 {
+  color: #173b32;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.feedback-heading p,
+.feedback-form-heading p {
+  color: #777;
+}
+
+/* CONTACT CARDS */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-bottom: 75px;
+}
+
+.contact-card {
+  background: #fff;
+  padding: 30px 22px;
+  border: 1px solid #eeeae2;
+  border-radius: 14px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-icon {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.contact-card h3 {
+  color: #173b32;
+  margin-bottom: 12px;
+}
+
+.contact-card p {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* FEEDBACK FORM */
+
+.feedback-form-section {
+  max-width: 750px;
+  margin: auto;
+}
+
+.feedback-form {
+  background: #fff;
+  padding: 35px;
+  border: 1px solid #eeeae2;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(23, 59, 50, 0.07);
+}
+
+.form-group {
+  margin-bottom: 23px;
+}
+
+.form-group label {
+  display: block;
+  color: #173b32;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #c58c32;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.feedback-submit {
+  background: #173b32;
+  color: #fff;
+  border: none;
+  padding: 15px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.feedback-submit:hover {
+  background: #245b4c;
+}
+
+.form-note {
+  color: #888;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* FEEDBACK CTA */
+
+.feedback-cta {
+  background: #173b32;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.feedback-cta h2 {
+  font-size: 29px;
+  margin-bottom: 12px;
+}
+
+.feedback-cta p {
+  color: #d6e0d8;
+  margin-bottom: 25px;
+}
+
+.feedback-cta-button {
+  display: inline-block;
+  padding: 13px 25px;
+  background: #e8b85b;
+  color: #173b32;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 7px;
+}
+
+.feedback-cta-button:hover {
+  background: #f1c977;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feedback-form {
+    padding: 24px;
+  }
+
+  .feedback-hero {
+    padding: 55px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feedback-heading h2,
+  .feedback-form-heading h2 {
+    font-size: 25px;
+  }
+
+  .feedback-form {
+    padding: 18px;
+  }
+
+  .feedback-cta h2 {
+    font-size: 23px;
   }
 
   .menu-grid {
