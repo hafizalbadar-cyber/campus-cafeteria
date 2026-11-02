@@ -837,3 +837,163 @@ footer p {
         font-size: 12px;
     }
 }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fcfbf9;
+}
+
+header {
+    background: #173b32;
+    color: #ffffff;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+header h1 {
+    font-size: clamp(34px, 5vw, 48px);
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+header p {
+    color: #d6e0d8;
+    font-size: 16px;
+    margin: 0;
+}
+
+nav {
+    background: #102b24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 17px 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #e8b85b;
+}
+
+.container {
+    width: min(1120px, 92%);
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #eeeae2;
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(23, 59, 50, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(23, 59, 50, 0.10);
+}
+
+.card h3 {
+    color: #173b32;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #657169;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.card ul {
+    margin-top: 18px;
+    margin-bottom: 0;
+    padding-left: 22px;
+}
+
+.card li {
+    color: #657169;
+    padding: 8px 0;
+    line-height: 1.7;
+}
+
+.card li strong {
+    color: #173b32;
+}
+
+footer {
+    background: #102b24;
+    color: #d6e0d8;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 40px 15px;
+    }
+
+    nav {
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .card {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
