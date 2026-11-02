@@ -1,7 +1,260 @@
+/* ========================================
+   CAMPUS BITES - SHARED STYLES
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #faf9f6;
+  color: #242c27;
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.site-header {
+  background: #173b32;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: 800;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #e8b85b;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #e8b85b;
+}
+
+/* MENU HERO */
+
+.menu-hero {
+  background: #eaf0e9;
+  text-align: center;
+  padding: 85px 20px;
+}
+
+.section-label {
+  display: inline-block;
+  color: #b17c25;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.menu-hero h1 {
+  font-size: clamp(36px, 5vw, 54px);
+  line-height: 1.2;
+  margin-bottom: 18px;
+  color: #173b32;
+}
+
+.menu-hero h1 span {
+  color: #c58c32;
+}
+
+.menu-hero p {
+  max-width: 620px;
+  margin: 0 auto;
+  color: #657169;
+  font-size: 16px;
+}
+
+/* MENU SECTIONS */
+
+.menu-section {
+  padding-top: 65px;
+}
+
+.category-heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 27px;
+}
+
+.category-heading > span {
+  font-size: 30px;
+  font-weight: 800;
+  color: #d3a24d;
+}
+
+.category-heading h2 {
+  color: #173b32;
+  font-size: 26px;
+}
+
+.category-heading p {
+  color: #7a827c;
+  font-size: 14px;
+}
+
+/* MENU CARDS */
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.menu-card {
+  background: #ffffff;
+  border: 1px solid #eeeae2;
+  border-radius: 14px;
+  padding: 27px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(23, 59, 50, 0.1);
+}
+
+.food-icon {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.menu-card h3 {
+  color: #173b32;
+  font-size: 19px;
+  margin-bottom: 9px;
+}
+
+.menu-card p {
+  color: #7a827c;
+  font-size: 14px;
+  min-height: 45px;
+}
+
+.menu-price {
+  color: #b17c25;
+  font-weight: 800;
+  font-size: 19px;
+  margin-top: 17px;
+}
+
+/* CALL TO ACTION */
+
+.menu-cta {
+  margin-top: 75px;
+  padding: 65px 20px;
+  text-align: center;
+  background: #173b32;
+  color: #ffffff;
+}
+
+.menu-cta h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.menu-cta p {
+  color: #d6e0d8;
+  margin-bottom: 25px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #e8b85b;
+  color: #173b32;
+  padding: 13px 28px;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 7px;
+}
+
+/* FOOTER */
+
+.site-footer {
+  background: #102b24;
+  color: #d6e0d8;
+  text-align: center;
+  padding: 24px 10px;
+  font-size: 14px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+  }
+
+  .main-nav {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .menu-hero {
+    padding: 60px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-heading h2 {
+    font-size: 21px;
+  }
+
+  .menu-card {
+    padding: 22px;
+  }
+
+  .menu-cta h2 {
+    font-size: 25px;
+  }
 
 /* =================================
    CAMPUS BITES - MAIN STYLESHEET
-================================= */
 
 /* 1. General Styling */
 * {
@@ -251,7 +504,6 @@ footer p {
 
 /* =================================
    11. RESPONSIVE DESIGN
-================================= */
 
 /* Tablets and small laptops */
 @media screen and (max-width: 768px) {
